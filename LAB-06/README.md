@@ -215,8 +215,8 @@ After completing this lab, you will understand:
 ```
 SQL-AGGREGATION-Lab
 
-├── schema.sql
-├── aggregation_lab.sql
+├── DB-Lab-6.pdf
+├── sql_groupby_analysis.sql
 └── README.md
 ```
 
@@ -228,21 +228,23 @@ Open Oracle SQL*Plus or Oracle SQL Developer
 
 Navigate to the respective lab folder and execute the SQL file.
 
-### ▶️ Example (LAB-03)
+### ▶️ Example (LAB-06)
 
 ```sql
-@lab3.sql
+sql_groupby_analysis.sql
 ```
 
 Similarly, for other labs:
 
-- LAB-01 → run corresponding `.sql` file  
-- LAB-02 → run corresponding `.sql` file  
-- LAB-03 → `@lab3.sql`  
-- LAB-04 → run `lab_queries.sql`  
-- LAB-05 → run corresponding `.sql` file  
+- LAB-01 → run corresponding `1st Lab [Assignment (DDL + DML)].sql` file  
+- LAB-02 → run corresponding `college_database.sql` file  
+- LAB-03 → run corresponding `lab3.sql` file   
+- LAB-04 → run corresponding `lab_queries.sql` file  
+- LAB-05 → run corresponding `join_lab.sql` file
+- LAB-06 → run corresponding `sql_groupby_analysis.sql` file  
 
 Ensure you are inside the correct directory before executing the file.
+
 ---
 
 ## 🎯 Conclusion
