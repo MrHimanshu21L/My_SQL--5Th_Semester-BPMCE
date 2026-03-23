@@ -236,7 +236,7 @@ sql_groupby_analysis.sql
 
 Similarly, for other labs:
 
-- LAB-01 → run corresponding `1st Lab [Assignment (DDL + DML)].sql` file  
+- LAB-01 → run corresponding `LAB-01(DDL+DML).sql` file  
 - LAB-02 → run corresponding `college_database.sql` file  
 - LAB-03 → run corresponding `lab3.sql` file   
 - LAB-04 → run corresponding `lab_queries.sql` file  
