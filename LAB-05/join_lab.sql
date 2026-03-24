@@ -560,7 +560,7 @@ INNER JOIN Enrollment E
 ON S.Student_ID = E.Student_ID
 INNER JOIN Course C
 ON E.Course_ID = C.Course_ID
-WHERE E.Semester = '4';
+WHERE E.Semester = 'S4';
 
 -- Output:
 -- +------------------+-------------+-------+
@@ -605,7 +605,7 @@ SELECT S.Name, S.Dept_ID, C.Course_Name
 FROM Student S
 INNER JOIN Enrollment E
 ON S.Student_ID = E.Student_ID
-INNER JOIN Course C
+INNER JOIN Course C 
 ON E.Course_ID = C.Course_ID;
 
 -- Output:
