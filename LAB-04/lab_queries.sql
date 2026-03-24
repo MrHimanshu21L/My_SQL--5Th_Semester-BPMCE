@@ -708,24 +708,125 @@ ORDER BY DOB DESC;
 -- S501       | Saurabh Kumar    | 17-JAN-04  | Male   | 9157891234 | D006
 -- S207       | Nitesh Kumar     | 03-JAN-04  | Male   | 9792345678 | D002
 
-
-/* 15. Faculty sorted by designation */
+/* 15. Faculty sorted by designation (ascending order) */
 SELECT * FROM Faculty
 ORDER BY Designation ASC;
 
+-- Output:
+-- +------------+--------------------------+--------------+--------------------------------+---------+
+-- | Faculty_ID | Name                     | Designation  | Email                          | Dept_ID |
+-- +------------+--------------------------+--------------+--------------------------------+---------+
+-- | F102       | Md Ehtashamoul Haque     | Asst Pro     | ehtasham47@gmail.com           | D001    |
+-- | F103       | Amit Kumar               | Asst Pro     | amitbcebhagalpur@gmail.com     | D001    |
+-- | F104       | Md Izhar                 | Asst Pro     | mdizhar1996@gmail.com          | D001    |
+-- | F105       | Manisha Kumari Singh     | Asst Pro     | manisha.ks241@gmail.com        | D001    |
+-- | F202       | Sujeet Kumar             | Asst Pro     | ksujeet.cs@gmail.com           | D002    |
+-- | F203       | Praveen Kumar            | Asst Pro     | praveenkumaryadav782@gmail.com | D002    |
+-- | F204       | Manisha Kumari Singh     | Asst Pro     | manisha.ks241@gmail.com        | D002    |
+-- | F205       | Md Izhar                 | Asst Pro     | mdizhar1996@gmail.com          | D002    |
+-- | F301       | Hare Krishna Mishra      | Asst Pro     | hare.dbit@gmail.com            | D003    |
+-- | F302       | Ashish Kumar Suman       | Asst Pro     | sumanashish.rkt@gmail.com      | D003    |
+-- | F303       | Mitesh Kumar             | Asst Pro     | mitesh.sva@gmail.com           | D003    |
+-- | F304       | Nitish Kumar             | Asst Pro     | nitianj@gmail.com              | D003    |
+-- | F401       | Akhilesh Kumar           | Asst Pro     | akhileshkumar3804@gmail.com    | D004    |
+-- | F403       | Nishikant Kumar          | Asst Pro     | nishikantbpmce32@gmail.com     | D004    |
+-- | F404       | Raushan Anand            | Asst Pro     | raushanbpmc@gmail.com          | D004    |
+-- | F405       | Vicky Anand              | Asst Pro     | Vickya.pg18.ce@Nitp.ac.in      | D004    |
+-- | F603       | Uttam Kumar              | Asst Pro     | uttamiitp1@gmail.com           | D005    |
+-- | F604       | Firoz Akhtar             | Asst Pro     | firozakhtar1581@gmail.com      | D005    |
+-- | F605       | Rahul Ranjan Bharti      | Asst Pro     | 15rahulbharti@gmail.com        | D005    |
+-- | F502       | Kunal Kumar              | Asst Pro     | kunal1989kumar@gmail.com       | D006    |
+-- | F503       | Nishikant Kumar          | Asst Pro     | nishikantbpmce32@gmail.com     | D006    |
+-- | F504       | Vicky Anand              | Asst Pro     | Vickya.pg18@Nitp.ac.in         | D006    |
+-- | F505       | Pankaj Kumar             | Asst Pro     | pankajkumarpk8888@gmail.com    | D006    |
+-- | F902       | Md Ehteshamoul Hoque     | Asst Pro     | ehtasham47@gmail.com           | D009    |
+-- | F903       | Sujeet Kumar             | Asst Pro     | ksujeet.cs@gmail.com           | D009    |
+-- | F904       | Praveen Kumar            | Asst Pro     | praveenkumaryadav782@gmail.com | D009    |
+-- | F905       | Manisha Kumari Singh     | Asst Pro     | manisha.ks241@gmail.com        | D009    |
+-- | F101       | Murlidhar Prasad Singh   | AsstPro HoD  | singhmurlidhar@gmail.com       | D001    |
+-- | F201       | Md Ehteshamoul Hoque     | AsstPro HoD  | ehtasham47@gmail.com           | D002    |
+-- | F305       | Mithlesh Kumar           | AsstPro HoD  | bpmceeee110@gmail.com          | D003    |
+-- | F402       | Kunal Kumar              | AsstPro HoD  | kunal1989kumar@gmail.com       | D004    |
+-- | F602       | Ajay Giri                | AsstPro HoD  | ajay_giri05@rediffmail.com     | D005    |
+-- | F501       | Akhilesh Kumar           | AsstPro HoD  | akhileshkumar3804@gmail.com    | D006    |
+-- | F901       | Murlidhar Prasad Singh   | AsstPro HoD  | singhmurlidhar@gmail.com       | D009    |
+-- | F601       | Arbind Kumar Amar        | PrincipalIC  | ak_amar73@yahoo.com            | D005    |
+-- +------------+--------------------------+--------------+--------------------------------+---------+
 
 
 /* 16. Courses sorted by credits descending */
 SELECT * FROM Course
 ORDER BY Credits DESC;
 
+-- Output:
+-- +-----------+-------------+---------+---------+------------+
+-- | Course_ID | Course_Name | Credits | Dept_ID | Faculty_ID |
+-- +-----------+-------------+---------+---------+------------+
+-- | C101      | DBMS        | 4       | D001    | F101       |
+-- | C102      | OS          | 4       | D001    | F102       |
+-- | C103      | CN          | 4       | D001    | F103       |
+-- | C105      | DSA         | 4       | D001    | F105       |
+-- | C201      | ML          | 4       | D002    | F201       |
+-- | C202      | DL          | 4       | D002    | F202       |
+-- | C203      | DataMining  | 4       | D002    | F203       |
+-- | C301      | Circuit     | 4       | D003    | F301       |
+-- | C302      | Machines    | 4       | D003    | F302       |
+-- | C303      | PowerSys    | 4       | D003    | F303       |
+-- | C401      | Survey      | 4       | D004    | F401       |
+-- | C402      | Soil        | 4       | D004    | F402       |
+-- | C403      | Structure   | 4       | D004    | F403       |
+-- | C601      | Thermo      | 4       | D005    | F601       |
+-- | C602      | Fluid       | 4       | D005    | F602       |
+-- | C603      | Machine     | 4       | D005    | F603       |
+-- | C504      | DBMS        | 4       | D006    | F504       |
+-- | C901      | Graphics    | 4       | D009    | F901       |
+-- | C903      | Model3D     | 4       | D009    | F903       |
+-- | C104      | SE          | 3       | D001    | F104       |
+-- | C204      | PythonAI    | 3       | D002    | F204       |
+-- | C205      | NLP         | 3       | D002    | F205       |
+-- | C304      | Control     | 3       | D003    | F304       |
+-- | C305      | Electro     | 3       | D003    | F305       |
+-- | C404      | Concrete    | 3       | D004    | F404       |
+-- | C405      | Hydrology   | 3       | D004    | F405       |
+-- | C604      | Manufact    | 3       | D005    | F604       |
+-- | C605      | AutoCAD     | 3       | D005    | F605       |
+-- | C501      | CAD         | 3       | D006    | F501       |
+-- | C502      | GIS         | 3       | D006    | F502       |
+-- | C503      | Python      | 3       | D006    | F503       |
+-- | C505      | WebTech     | 3       | D006    | F505       |
+-- | C902      | Anim        | 3       | D009    | F902       |
+-- | C904      | VFX         | 3       | D009    | F904       |
+-- | C905      | Render      | 3       | D009    | F905       |
+-- +-----------+-------------+---------+---------+------------+
+
 /* 17. First 3 students */
 SELECT * FROM Student
 FETCH FIRST 3 ROWS ONLY;
 
+-- Output:
+-- +------------+--------------+------------+--------+------------+---------+
+-- | Student_ID | Name         | DOB        | Gender | Contact_No | Dept_ID |
+-- +------------+--------------+------------+--------+------------+---------+
+-- | S101       | Rahul Kumar  | 12-JAN-04  | Male   | 9123456781 | D001    |
+-- | S102       | Aman Singh   | 22-MAR-04  | Male   | 9234567812 | D001    |
+-- | S103       | Priya Sharma | 10-FEB-04  | Female | 9345678123 | D001    |
+-- +------------+--------------+------------+--------+------------+---------+
+
+
 /* 18. First 5 courses */
 SELECT * FROM Course
 FETCH FIRST 5 ROWS ONLY;
+
+-- Output:
+-- +-----------+-------------+---------+---------+------------+
+-- | Course_ID | Course_Name | Credits | Dept_ID | Faculty_ID |
+-- +-----------+-------------+---------+---------+------------+
+-- | C101      | DBMS        | 4       | D001    | F101       |
+-- | C102      | OS          | 4       | D001    | F102       |
+-- | C103      | CN          | 4       | D001    | F103       |
+-- | C104      | SE          | 3       | D001    | F104       |
+-- | C105      | DSA         | 4       | D001    | F105       |
+-- +-----------+-------------+---------+---------+------------+
 
 
 
@@ -739,11 +840,128 @@ SELECT
     FLOOR(MONTHS_BETWEEN(SYSDATE, DOB)/12) AS Years
 FROM Student;
 
+-- Output (approx based on year ~2026):
+-- +------------------+-------+
+-- | Name             | Years |
+-- +------------------+-------+
+-- | Rahul Kumar      | 22    |
+-- | Aman Singh       | 22    |
+-- | Priya Sharma     | 22    |
+-- | Neha Kumari      | 21    |
+-- | Vikas Raj        | 21    |
+-- | Pooja Singh      | 21    |
+-- | Rohit Yadav      | 21    |
+-- | Soni Kumari      | 21    |
+-- | Deepak Kumar     | 21    |
+-- | Anjali Verma     | 21    |
+-- | Aditya Kumar     | 22    |
+-- | Riya Sharma      | 22    |
+-- | Kunal Singh      | 21    |
+-- | Sneha Kumari     | 21    |
+-- | Harsh Raj        | 21    |
+-- | Komal Singh      | 21    |
+-- | Nitesh Kumar     | 22    |
+-- | Shivani Singh    | 21    |
+-- | Abhishek Raj     | 21    |
+-- | Muskan Kumari    | 21    |
+-- | Kishan Kumar     | 22    |
+-- | Ranjan Singh     | 22    |
+-- | Neetu Kumari     | 22    |
+-- | Sandeep Kumar    | 21    |
+-- | Sarla Kumari     | 21    |
+-- | Ravi Raj         | 21    |
+-- | Pinky Kumari     | 21    |
+-- | Manoj Kumar      | 21    |
+-- | Seema Singh      | 21    |
+-- | Ashok Kumar      | 21    |
+-- | Manish Kumar     | 22    |
+-- | Ravi Kumar       | 22    |
+-- | Priti Kumari     | 21    |
+-- | Sunil Yadav      | 21    |
+-- | Anita Kumari     | 21    |
+-- | Vivek Singh      | 21    |
+-- | Rakesh Kumar     | 21    |
+-- | Kavita Sharma    | 21    |
+-- | Mukesh Kumar     | 21    |
+-- | Suman Kumari     | 21    |
+-- | Ankit Kumar      | 22    |
+-- | Rohit Singh      | 22    |
+-- | Komal Kumari     | 21    |
+-- | Shubham Raj      | 21    |
+-- | Meena Kumari     | 21    |
+-- | Ritesh Kumar     | 21    |
+-- | Vandana Singh    | 21    |
+-- | Arun Kumar       | 21    |
+-- | Rekha Kumari     | 21    |
+-- | Dilip Kumar      | 21    |
+-- | Saurabh Kumar    | 22    |
+-- | Ritu Kumari      | 22    |
+-- | Gaurav Singh     | 22    |
+-- | Pallavi Sharma   | 21    |
+-- | Nikhil Raj       | 21    |
+-- | Jyoti Kumari     | 21    |
+-- | Ankur Kumar      | 21    |
+-- | Rashmi Singh     | 21    |
+-- | Prakash Kumar    | 21    |
+-- | Shalini Kumari   | 21    |
+-- | Ravi Kumar       | 22    |
+-- | Neha Kumari      | 22    |
+-- | Arvind Raj       | 21    |
+-- | Pooja Singh      | 21    |
+-- | Vikash Kumar     | 21    |
+-- | Suman Kumari     | 21    |
+-- | Rajesh Kumar     | 21    |
+-- | Anjali Singh     | 21    |
+-- | Kundan Kumar     | 21    |
+-- | Ritu Kumari      | 21    |
+-- +------------------+-------+
+
 /* 20. Course name with updated credits */
 SELECT 
     Course_Name,
     Credits + 1 AS Updated_Credits
 FROM Course;
+
+-- Output:
+-- +-------------+------------------+
+-- | Course_Name | Updated_Credits  |
+-- +-------------+------------------+
+-- | DBMS        | 5                |
+-- | OS          | 5                |
+-- | CN          | 5                |
+-- | SE          | 4                |
+-- | DSA         | 5                |
+-- | ML          | 5                |
+-- | DL          | 5                |
+-- | DataMining  | 5                |
+-- | PythonAI    | 4                |
+-- | NLP         | 4                |
+-- | Circuit     | 5                |
+-- | Machines    | 5                |
+-- | PowerSys    | 5                |
+-- | Control     | 4                |
+-- | Electro     | 4                |
+-- | Survey      | 5                |
+-- | Soil        | 5                |
+-- | Structure   | 5                |
+-- | Concrete    | 4                |
+-- | Hydrology   | 4                |
+-- | Thermo      | 5                |
+-- | Fluid       | 5                |
+-- | Machine     | 5                |
+-- | Manufact    | 4                |
+-- | AutoCAD     | 4                |
+-- | CAD         | 4                |
+-- | GIS         | 4                |
+-- | Python      | 4                |
+-- | DBMS        | 5                |
+-- | WebTech     | 4                |
+-- | Graphics    | 5                |
+-- | Anim        | 4                |
+-- | Model3D     | 5                |
+-- | VFX         | 4                |
+-- | Render      | 4                |
+-- +-------------+------------------+
 
 /* 21. Enrollment with grade renamed */
 SELECT 
@@ -753,14 +971,209 @@ SELECT
     Grade AS Final_Grade
 FROM Enrollment;
 
+-- Output:
+-- +------------+-----------+----------+-------------+
+-- | Student_ID | Course_ID | Semester | Final_Grade |
+-- +------------+-----------+----------+-------------+
+-- | S101       | C101      | S1       | A           |
+-- | S102       | C102      | S2       | B           |
+-- | S103       | C103      | S3       | A           |
+-- | S104       | C104      | S4       | B           |
+-- | S105       | C105      | S5       | A           |
+-- | S106       | C101      | S6       | B           |
+-- | S107       | C102      | S7       | A           |
+-- | S108       | C103      | S8       | B           |
+-- | S109       | C104      | S2       | A           |
+-- | S110       | C105      | S4       | B           |
+-- | S201       | C201      | S1       | A           |
+-- | S202       | C202      | S2       | B           |
+-- | S203       | C203      | S3       | A           |
+-- | S204       | C204      | S4       | B           |
+-- | S205       | C205      | S5       | A           |
+-- | S206       | C201      | S6       | B           |
+-- | S207       | C202      | S7       | A           |
+-- | S208       | C203      | S8       | B           |
+-- | S209       | C204      | S2       | A           |
+-- | S210       | C205      | S5       | B           |
+-- | S301       | C301      | S1       | A           |
+-- | S302       | C302      | S2       | B           |
+-- | S303       | C303      | S3       | A           |
+-- | S304       | C304      | S4       | B           |
+-- | S305       | C305      | S5       | A           |
+-- | S306       | C301      | S6       | B           |
+-- | S307       | C302      | S7       | A           |
+-- | S308       | C303      | S8       | B           |
+-- | S309       | C304      | S3       | A           |
+-- | S310       | C305      | S6       | B           |
+-- | S401       | C401      | S1       | A           |
+-- | S402       | C402      | S2       | B           |
+-- | S403       | C403      | S3       | A           |
+-- | S404       | C404      | S4       | B           |
+-- | S405       | C405      | S5       | A           |
+-- | S406       | C401      | S6       | B           |
+-- | S407       | C402      | S7       | A           |
+-- | S408       | C403      | S8       | B           |
+-- | S409       | C404      | S4       | A           |
+-- | S410       | C405      | S7       | B           |
+-- | S601       | C601      | S1       | A           |
+-- | S602       | C602      | S2       | B           |
+-- | S603       | C603      | S3       | A           |
+-- | S604       | C604      | S4       | B           |
+-- | S605       | C605      | S5       | A           |
+-- | S606       | C601      | S6       | B           |
+-- | S607       | C602      | S7       | A           |
+-- | S608       | C603      | S8       | B           |
+-- | S609       | C604      | S5       | A           |
+-- | S610       | C605      | S2       | B           |
+-- | S501       | C501      | S1       | A           |
+-- | S502       | C502      | S2       | B           |
+-- | S503       | C503      | S3       | A           |
+-- | S504       | C504      | S4       | B           |
+-- | S505       | C505      | S5       | A           |
+-- | S506       | C501      | S6       | B           |
+-- | S507       | C502      | S7       | A           |
+-- | S508       | C503      | S8       | B           |
+-- | S509       | C504      | S6       | A           |
+-- | S510       | C505      | S3       | B           |
+-- | S901       | C901      | S1       | A           |
+-- | S902       | C902      | S2       | B           |
+-- | S903       | C903      | S3       | A           |
+-- | S904       | C904      | S4       | B           |
+-- | S905       | C905      | S5       | A           |
+-- | S906       | C901      | S6       | B           |
+-- | S907       | C902      | S7       | A           |
+-- | S908       | C903      | S8       | B           |
+-- | S909       | C904      | S7       | A           |
+-- | S910       | C905      | S2       | B           |
+-- +------------+-----------+----------+-------------|
+
+
 /* 22. Student name with birth year */
 SELECT 
     Name,
     EXTRACT(YEAR FROM DOB) AS Birth_Year
 FROM Student;
 
+-- Output:
+-- +------------------+------------+
+-- | Name             | Birth_Year |
+-- +------------------+------------+
+-- | Rahul Kumar      | 2004       |
+-- | Aman Singh       | 2004       |
+-- | Priya Sharma     | 2004       |
+-- | Neha Kumari      | 2004       |
+-- | Vikas Raj        | 2004       |
+-- | Pooja Singh      | 2004       |
+-- | Rohit Yadav      | 2004       |
+-- | Soni Kumari      | 2004       |
+-- | Deepak Kumar     | 2004       |
+-- | Anjali Verma     | 2004       |
+-- | Aditya Kumar     | 2004       |
+-- | Riya Sharma      | 2004       |
+-- | Kunal Singh      | 2004       |
+-- | Sneha Kumari     | 2004       |
+-- | Harsh Raj        | 2004       |
+-- | Komal Singh      | 2004       |
+-- | Nitesh Kumar     | 2004       |
+-- | Shivani Singh    | 2004       |
+-- | Abhishek Raj     | 2004       |
+-- | Muskan Kumari    | 2004       |
+-- | Kishan Kumar     | 2004       |
+-- | Ranjan Singh     | 2004       |
+-- | Neetu Kumari     | 2004       |
+-- | Sandeep Kumar    | 2004       |
+-- | Sarla Kumari     | 2004       |
+-- | Ravi Raj         | 2004       |
+-- | Pinky Kumari     | 2004       |
+-- | Manoj Kumar      | 2004       |
+-- | Seema Singh      | 2004       |
+-- | Ashok Kumar      | 2004       |
+-- | Manish Kumar     | 2004       |
+-- | Ravi Kumar       | 2004       |
+-- | Priti Kumari     | 2004       |
+-- | Sunil Yadav      | 2004       |
+-- | Anita Kumari     | 2004       |
+-- | Vivek Singh      | 2004       |
+-- | Rakesh Kumar     | 2004       |
+-- | Kavita Sharma    | 2004       |
+-- | Mukesh Kumar     | 2004       |
+-- | Suman Kumari     | 2004       |
+-- | Ankit Kumar      | 2004       |
+-- | Rohit Singh      | 2004       |
+-- | Komal Kumari     | 2004       |
+-- | Shubham Raj      | 2004       |
+-- | Meena Kumari     | 2004       |
+-- | Ritesh Kumar     | 2004       |
+-- | Vandana Singh    | 2004       |
+-- | Arun Kumar       | 2004       |
+-- | Rekha Kumari     | 2004       |
+-- | Dilip Kumar      | 2004       |
+-- | Saurabh Kumar    | 2004       |
+-- | Ritu Kumari      | 2004       |
+-- | Gaurav Singh     | 2004       |
+-- | Pallavi Sharma   | 2004       |
+-- | Nikhil Raj       | 2004       |
+-- | Jyoti Kumari     | 2004       |
+-- | Ankur Kumar      | 2004       |
+-- | Rashmi Singh     | 2004       |
+-- | Prakash Kumar    | 2004       |
+-- | Shalini Kumari   | 2004       |
+-- | Ravi Kumar       | 2004       |
+-- | Neha Kumari      | 2004       |
+-- | Arvind Raj       | 2004       |
+-- | Pooja Singh      | 2004       |
+-- | Vikash Kumar     | 2004       |
+-- | Suman Kumari     | 2004       |
+-- | Rajesh Kumar     | 2004       |
+-- | Anjali Singh     | 2004       |
+-- | Kundan Kumar     | 2004       |
+-- | Ritu Kumari      | 2004       |
+-- +------------------+------------+
+
+
 /* 23. Faculty name with email domain */
 SELECT 
     Name,
     SUBSTR(Email, INSTR(Email,'@')+1) AS Email_Domain
 FROM Faculty;
+
+-- Output:
+-- +--------------------------+----------------------+
+-- | Name                     | Email_Domain         |
+-- +--------------------------+----------------------+
+-- | Murlidhar Prasad Singh   | gmail.com            |
+-- | Md Ehtashamoul Haque     | gmail.com            |
+-- | Amit Kumar               | gmail.com            |
+-- | Md Izhar                 | gmail.com            |
+-- | Manisha Kumari Singh     | gmail.com            |
+-- | Md Ehteshamoul Hoque     | gmail.com            |
+-- | Sujeet Kumar             | gmail.com            |
+-- | Praveen Kumar            | gmail.com            |
+-- | Manisha Kumari Singh     | gmail.com            |
+-- | Md Izhar                 | gmail.com            |
+-- | Hare Krishna Mishra      | gmail.com            |
+-- | Ashish Kumar Suman       | gmail.com            |
+-- | Mitesh Kumar             | gmail.com            |
+-- | Nitish Kumar             | gmail.com            |
+-- | Mithlesh Kumar           | gmail.com            |
+-- | Akhilesh Kumar           | gmail.com            |
+-- | Kunal Kumar              | gmail.com            |
+-- | Nishikant Kumar          | gmail.com            |
+-- | Raushan Anand            | gmail.com            |
+-- | Vicky Anand              | Nitp.ac.in           |
+-- | Arbind Kumar Amar        | yahoo.com            |
+-- | Ajay Giri                | rediffmail.com       |
+-- | Uttam Kumar              | gmail.com            |
+-- | Firoz Akhtar             | gmail.com            |
+-- | Rahul Ranjan Bharti      | gmail.com            |
+-- | Akhilesh Kumar           | gmail.com            |
+-- | Kunal Kumar              | gmail.com            |
+-- | Nishikant Kumar          | gmail.com            |
+-- | Vicky Anand              | Nitp.ac.in           |
+-- | Pankaj Kumar             | gmail.com            |
+-- | Murlidhar Prasad Singh   | gmail.com            |
+-- | Md Ehteshamoul Hoque     | gmail.com            |
+-- | Sujeet Kumar             | gmail.com            |
+-- | Praveen Kumar            | gmail.com            |
+-- | Manisha Kumari Singh     | gmail.com            |
+-- +--------------------------+----------------------+
