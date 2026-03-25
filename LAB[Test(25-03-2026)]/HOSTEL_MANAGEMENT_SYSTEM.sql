@@ -40,23 +40,33 @@ CREATE TABLE Allocation (
    Q2: INSERT SAMPLE DATA INTO ALL TABLES
 ========================================================= */
 
-INSERT INTO Student VALUES('S101', 'Amit Kumar', 'Male', 'D101', '9876543210');
-INSERT INTO Student VALUES('S102', 'Neha Kumari', 'Female', 'D102', '9123456789');
-INSERT INTO Student VALUES('S103', 'Ravi Singh', 'Male', 'D101', '9012345678');
-INSERT INTO Student VALUES('S104', 'Pooja Sharma', 'Female', 'D103', '9988776655');
+/* ---------- Student ---------- */
 
-INSERT INTO Room VALUES('R1', 'A', 2);
-INSERT INTO Student VALUES('R2', 'A', 3);
-INSERT INTO Student VALUES('R3', 'B', 2);
+INSERT INTO Student VALUES ('S101', 'Amit Kumar', 'Male', 'D101', '9876543210');
+INSERT INTO Student VALUES ('S102', 'Neha Kumari', 'Female', 'D102', '9123456789');
+INSERT INTO Student VALUES ('S103', 'Ravi Singh', 'Male', 'D101', '9012345678');
+INSERT INTO Student VALUES ('S104', 'Pooja Sharma', 'Female', 'D103', '9988776655');
 
-INSERT INTO Warden VALUES('W1', 'Rajesh Kumar', '8888888888');
-INSERT INTO Student VALUES('W2', 'Sunita Devi', '7777777777');
 
-INSERT INTO Allocation VALUES('S101', 'R1', 'W1', '2025-01-10');
-INSERT INTO Student VALUES('S102', 'R2', 'W1', '2025-01-11');
-INSERT INTO Student VALUES('S103', 'R1', 'W2', '2025-01-12');
-INSERT INTO Student VALUES('S104', 'R3', 'W2', '2025-01-13');
+/* ---------- Room ---------- */
 
+INSERT INTO Room VALUES ('R1', 'A', 2);
+INSERT INTO Room VALUES ('R2', 'A', 3);
+INSERT INTO Room VALUES ('R3', 'B', 2);
+
+
+/* ---------- Warden ---------- */
+
+INSERT INTO Warden VALUES ('W1', 'Rajesh Kumar', '8888888888');
+INSERT INTO Warden VALUES ('W2', 'Sunita Devi', '7777777777');
+
+
+/* ---------- Allocation ---------- */
+
+INSERT INTO Allocation VALUES ('S101', 'R1', 'W1', '2025-01-10');
+INSERT INTO Allocation VALUES ('S102', 'R2', 'W1', '2025-01-11');
+INSERT INTO Allocation VALUES ('S103', 'R1', 'W2', '2025-01-12');
+INSERT INTO Allocation VALUES ('S104', 'R3', 'W2', '2025-01-13');
 
 /* =========================================================
    Q3(a): DISPLAY STUDENT NAME AND DEPARTMENT
