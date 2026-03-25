@@ -26,15 +26,43 @@ The project demonstrates how databases are **created, structured, and queried** 
 
 ```text
 My_SQL--5Th_Semester-BPMCE
- │
- ├── Lab-01
- ├── LAB-02
- ├── LAB-03
- │   └── lab3.sql
- ├── LAB_04
- │   └── lab_queries.sql
- ├── LAB-05
- └── README.md
+│
+├── README.md
+│
+├── LAB-01
+│   ├── LAB-01(DDL+DML).sql
+│   └── README.md
+│
+├── LAB-02
+│   ├── DB-Lab-2.pdf
+│   ├── ER DIAGRAM.drawio.png
+│   ├── relation.png
+│   ├── college_database.sql
+│   └── README.md
+│
+├── LAB-03
+│   ├── DB-Lab-3.pdf
+│   ├── lab3.sql
+│   └── README.md
+│
+├── LAB-04
+│   ├── DB-Lab-4.pdf
+│   ├── lab_queries.sql
+│   └── README.md
+│
+├── LAB-05
+│   ├── DB-Lab-5.pdf
+│   ├── join_lab.sql
+│   └── README.md
+│
+├── LAB-06
+│   ├── DB-Lab-6.pdf
+│   ├── sql_groupby_analysis.sql
+│   └── README.md
+│
+└── LAB[Test(25-03-2026)]
+    ├── HOSTEL_MANAGEMENT_SYSTEM.sql
+    └── README.md
 
 ```
 
