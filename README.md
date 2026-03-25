@@ -64,7 +64,7 @@ This project helps to:
 
 ## 👤 Author
 
-**Name:** Himanshu Kumar Gupta
+**Name:** Himanshu Kumar Gupta 
 **Registration Number:** 23157128056  
 **Subject:** Database Management System (DBMS)  
 **Semester:** 5th Semester  
