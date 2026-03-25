@@ -35,37 +35,44 @@ CREATE TABLE Bill (
 );
 
 
-/* =========================================================
-   Q2: INSERT DATA INTO TABLES
-========================================================= */
+/* ================================
+  Q2. INSERT DATA (ALL TABLES)
+================================ */
 
-INSERT INTO Patient VALUES
-(1, 'Rahul Sharma', 35, 'Male', 'Delhi'),
-(2, 'Anita Verma', 28, 'Female', 'Mumbai'),
-(3, 'Suresh Kumar', 42, 'Male', 'Chennai'),
-(4, 'Priya Singh', 30, 'Female', 'Kolkata'),
-(5, 'Amit Das', 50, 'Male', 'Bhubaneswar');
+/* ---------- Patient ---------- */
 
-INSERT INTO Doctor VALUES
-(101, 'Dr. Mehta', 'Cardiology', 15),
-(102, 'Dr. Rao', 'Orthopedics', 10),
-(103, 'Dr. Sen', 'Neurology', 12),
-(104, 'Dr. Gupta', 'Dermatology', 8),
-(105, 'Dr. Iyer', 'General Medicine', 20);
+INSERT INTO Patient VALUES (1, 'Rahul Sharma', 35, 'Male', 'Delhi');
+INSERT INTO Patient VALUES (2, 'Anita Verma', 28, 'Female', 'Mumbai');
+INSERT INTO Patient VALUES (3, 'Suresh Kumar', 42, 'Male', 'Chennai');
+INSERT INTO Patient VALUES (4, 'Priya Singh', 30, 'Female', 'Kolkata');
+INSERT INTO Patient VALUES (5, 'Amit Das', 50, 'Male', 'Bhubaneswar');
 
-INSERT INTO Appointment VALUES
-(1001, 1, 101, '2024-02-10'),
-(1002, 2, 105, '2024-02-11'),
-(1003, 3, 102, '2024-02-12'),
-(1004, 4, 103, '2024-02-13'),
-(1005, 5, 101, '2024-02-14');
 
-INSERT INTO Bill VALUES
-(5001, 1001, 2000, 'Paid'),
-(5002, 1002, 1500, 'Pending'),
-(5003, 1003, 3000, 'Paid'),
-(5004, 1004, 4000, 'Paid'),
-(5005, 1005, 2500, 'Pending');
+/* ---------- Doctor ---------- */
+
+INSERT INTO Doctor VALUES (101, 'Dr. Mehta', 'Cardiology', 15);
+INSERT INTO Doctor VALUES (102, 'Dr. Rao', 'Orthopedics', 10);
+INSERT INTO Doctor VALUES (103, 'Dr. Sen', 'Neurology', 12);
+INSERT INTO Doctor VALUES (104, 'Dr. Gupta', 'Dermatology', 8);
+INSERT INTO Doctor VALUES (105, 'Dr. Iyer', 'General Medicine', 20);
+
+
+/* ---------- Appointment ---------- */
+
+INSERT INTO Appointment VALUES (1001, 1, 101, '2024-02-10');
+INSERT INTO Appointment VALUES (1002, 2, 105, '2024-02-11');
+INSERT INTO Appointment VALUES (1003, 3, 102, '2024-02-12');
+INSERT INTO Appointment VALUES (1004, 4, 103, '2024-02-13');
+INSERT INTO Appointment VALUES (1005, 5, 101, '2024-02-14');
+
+
+/* ---------- Bill ---------- */
+
+INSERT INTO Bill VALUES (5001, 1001, 2000, 'Paid');
+INSERT INTO Bill VALUES (5002, 1002, 1500, 'Pending');
+INSERT INTO Bill VALUES (5003, 1003, 3000, 'Paid');
+INSERT INTO Bill VALUES (5004, 1004, 4000, 'Paid');
+INSERT INTO Bill VALUES (5005, 1005, 2500, 'Pending');
 
 
 /* =========================================================
