@@ -156,6 +156,3 @@ GROUP BY r.RoomID, r.Capacity;
 - College Databases  
 - Resource Allocation Systems  
 
----
-
-## 🏁 Conclusion
