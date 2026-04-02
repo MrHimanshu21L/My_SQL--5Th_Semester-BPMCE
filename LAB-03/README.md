@@ -151,12 +151,14 @@ Through this project, the following database concepts are demonstrated:
 
 ---
 
-## 👨‍💻 Author
+## 🧑‍🎓 Author
 
-**Himanshu Kumar Gupta**
-CSE (AI & ML) Student
-Registration Number-> 23157128056
-DBMS Practical Project
+- Name - Himanshu Kumar Gupta
+- Reg No - 23157128056
+- Course - B.tech
+- Branch - Cse (AI & ML)
+- Subject - Database Lab
+- College - BP Mandal college of engineering, Madhepura
 
 ---
 
