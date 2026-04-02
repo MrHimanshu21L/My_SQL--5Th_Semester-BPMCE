@@ -70,3 +70,15 @@ Generating calculated values such as:
 
 ```sql
 @lab_queries.sql
+
+```
+---
+
+## 🧑‍🎓 Author
+
+- Name - Himanshu Kumar Gupta
+- Reg No - 23157128056
+- Course - B.tech
+- Branch - Cse (AI & ML)
+- Subject - Database Lab
+- College - BP Mandal college of engineering, Madhepura
