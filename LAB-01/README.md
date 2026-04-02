@@ -41,9 +41,12 @@ After completing this lab, students are able to create and modify database table
 
 ## 🧑‍🎓 Author
 
-Himanshu  
-5th Semester – DBMS Lab  
-BPMCE
+- Name - Himanshu Kumar Gupta
+- Reg No - 23157128056
+- Course - B.tech
+- Branch - Cse (AI & ML)
+- Subject - Database Lab
+- College - BP Mandal college of engineering, Madhepura
 
 ## 🛠️ Database Used
 
