@@ -154,5 +154,16 @@ GROUP BY r.RoomID, r.Capacity;
 
 - Hostel Management Systems  
 - College Databases  
-- Resource Allocation Systems  
+- Resource Allocation Systems
+
+---
+
+## 🧑‍🎓 Author
+
+- Name - Himanshu Kumar Gupta
+- Reg No - 23157128056
+- Course - B.tech
+- Branch - Cse (AI & ML)
+- Subject - Database Lab
+- College - BP Mandal college of engineering, Madhepura
 
