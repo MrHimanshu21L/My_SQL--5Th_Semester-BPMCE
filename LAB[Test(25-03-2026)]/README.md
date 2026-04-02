@@ -171,3 +171,12 @@ This project builds a strong foundation in SQL by combining:
 It is ideal for beginners aiming to master **real-world database operations**.
 
 ---
+
+## 🧑‍🎓 Author
+
+- Name - Himanshu Kumar Gupta
+- Reg No - 23157128056
+- Course - B.tech
+- Branch - Cse (AI & ML)
+- Subject - Database Lab
+- College - BP Mandal college of engineering, Madhepura
