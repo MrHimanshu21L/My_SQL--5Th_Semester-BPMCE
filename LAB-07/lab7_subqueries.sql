@@ -6,7 +6,6 @@
 -- Part A: Basic Subqueries
 -- =========================================
 
-
 -- =========================================
 -- Q1: Same department as S401
 -- =========================================
@@ -115,10 +114,6 @@ WHERE Dept_ID = (
 -- | Suman Kumari     |
 -- +------------------+
 
-
--- =========================================
--- Q4: Students from departments having female students
--- =========================================
 
 -- =========================================
 -- Q4: Students from departments having female students
