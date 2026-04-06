@@ -59,6 +59,10 @@ My_SQL--5Th_Semester-BPMCE
 │   ├── DB-Lab-6.pdf
 │   ├── sql_groupby_analysis.sql
 │   └── README.md
+├── LAB-07
+│   ├── DB-Lab-7.pdf
+│   ├── lab7_subqueries.sql
+│   └── README.md
 │
 |── LAB[Test(16-03-2026)]
 |   ├── HOSPITAL_DATABASE_SYSTEM.sql
